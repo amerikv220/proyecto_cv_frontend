@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosnuevo.css">
+    <title>CV LISA</title>
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/vector-premium/icono-circulo-usuario-anonimo-ilustracion-vector-estilo-plano-sombra_520826-1931.jpg"></head> 
+<body>
+    <!-- SECCION INICIO -->
+    <section class="inicio" id="inicio">
+        <div class="contenido-seccion">
+        <header>
+            <div class="nav-bar" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav id="nav" class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobremi">Sobre mí</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#resumen">Resumen</a>
+            </nav>
+            <div class="logo">
+                L<span class="color">P</span>
+            </div>
+        </header>
+        <div class="info">
+            <h1>Lesa Price</h1>          
+            <h2>FRONT END DEVELOPER</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>  
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>  
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>      
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                <a href="#"><i class="fa-light fa-calendar-days"></i></a>
+            </div>
+        </div>
+        <div class="foto">
+            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="">
+        </div>
+    </div>
+</section>
+     <!-- SECCION SOBRE MI -->      
+     <section class="sobremi" id="sobremi">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">SOBRE MI</h2>
+            <h3>DETALLES PERSONALES</h3>
+            
+            <p class="especial">Me dedico a estudiar este mundo de la programación para poder ejercerlo profesionalmente en una empresa.</p>
+            
+            <div class="fila">
+                <div class="col">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="titulo-detalle">PERFIL</span>
+                    <p>Jeff Hernandez</p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-location-pin"></i>
+                    <span class="titulo-detalle">UBICACIÓN</span>
+                    <p>848 Robinson Rd</p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-flag"></i>
+                    <span class="titulo-detalle">INTERESES</span>
+                    <p>Programación.</p>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="titulo-detalle">TELEFONO</span>
+                    <p>(909) 846-356</p>
+                </div>
+                <div class="col">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span class="titulo-detalle">MAIL</span>
+                    <p>martha.ray@example.com</p>
+                </div>
+                <div class="col">
+                    <i class="fa-light fa-calendar-days"></i>
+                    <span class="titulo-detalle">CUMPLEAÑOS</span>
+                    <p>11/6/1956</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION HABILIDADES -->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Mis habilidades</h2>
+            <h3>Me especializo en</h3>
+            <div class="fila">
+                <div class="col">
+                    <div class="progress">
+                        <p>HTML</p>
+                        <progress id="html" max="100" value="91"></progress>
+                        <span></span>
+                    </div>
+                    <div class="progress">
+                        <p>JAVASCRIPT</p>
+                        <progress id="javascript" max="100" value="79"></progress>
+                        <span></span>
+                    </div>
+                    <div class="progress">
+                        <p>CSS</p>
+                        <progress id="css" max="100" value="90"></progress>
+                        <span></span>
+                    </div>
+                    <div class="progress">
+                        <p>PHP</p>
+                        <progress id="php" max="100" value="70"></progress>
+                        <span></span>
+                    </div>
+                    <input type="button" id="boton" value="Recargar"/>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        
+        window.onload = function() { 
+            animateprogress("#html",91);
+            animateprogress("#php",70);
+            animateprogress("#css",90);
+            animateprogress("#javascript",75);
+        } 	
+
+        document.querySelector ("#boton").addEventListener ("click", function() { 
+            animateprogress("#html",91);
+            animateprogress("#php",70);
+            animateprogress("#css",90);
+            animateprogress("#javascript",75);
+        
+        });
+        </script>
+        </section>
+        <!-- SECCION RESUMEN -->
+        <section class="resumen" id="resumen">
+            <div class="contenido-seccion">
+                <h2 class="titulo-seccion">Resumen</h2>
+                <h3>Mi preparación y experiencia</h3>
+                <div class="info">
+                    <div class="col">
+                        <span class="titulo">Educación</span>
+                        <table>
+                            <tr>
+                                <td class="datos">
+                                    <h3>2015-2020</h3>
+                                </td>
+                                <td rowspan="2" class="descripcion">
+                                    Planificar, dirigir, realizar y/o evaluar proyectos de relevamiento, de problemas del mundo real. Especificación formal, diseño, implementación, prueba, verificación, validación, mantenimiento y control de calidad de sistemas de software que se ejecuten sobre sistemas de procesamiento de datos.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Lic. en sistema</h4>
+                                    <P>Universidad IUA - Argentina</P>
+                                    <span class="promedio">18</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td class="datos">
+                                    <h3>2006-2009</h3>
+                                </td>
+                                <td rowspan="2" class="descripcion">
+                                    Capacitado/a para diseñar y producir artefactos de software, reutilizar elementos existentes, implementarlos, programarlos y ocuparse de su optimización y mantenimiento.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Terciario en Programacion</h4>
+                                    <P>Universidad Universitas</P>
+                                    <span class="promedio">18</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td class="datos">
+                                    <h3>2001-2006</h3>
+                                </td>
+                                <td rowspan="2" class="descripcion">
+                                    Tecnico, colegio.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Tenico en Procesamiento de Datos</h4>
+                                    <P>Instituto Orsino</P>
+                                    <span class="promedio">15</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <span class="titulo">Experiencia Laboral</span>
+                        <table>
+                            <tr>
+                                <td class="datos">
+                                    <h3>2018 - Actualidad</h3>
+                                </td>
+                                <td rowspan="2" class="descripcion">
+                                    Toma de requerimientos con el cliente, Análisis de requerimientos y diseño de aplicaciones, Desarrollo de aplicaciones utilizando Javascript, PHP, MySQL, Soporte técnico a clientes.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Amazon</h4>
+                                    <P>Programador Junior</P>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="cv.js"></script>
+    </body>
+    </html>
+
+  
